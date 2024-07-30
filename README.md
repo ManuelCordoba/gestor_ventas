@@ -17,6 +17,10 @@ básico de productos para el aseo personal de clientes registrados
 
 ## Requisitos
 
+### Database
+
+- MySQL Server 8.033
+
 ### Backend
 
 - Python 3.8.0
@@ -28,6 +32,15 @@ básico de productos para el aseo personal de clientes registrados
 - Node.js 20.15.0 o superior
 - Angular CLI 18.1.2 o superior
 
+## Configuración Database
+
+1. **Crear base de datos Ejemplo:**
+
+    ```bash
+    CREATE SCHEMA `cleaning_sales` ;
+
+    ```
+    
 ## Configuración del Backend
 
 1. **Clona el repositorio:**
@@ -52,6 +65,17 @@ básico de productos para el aseo personal de clientes registrados
 
 
 
+4. **Configurar variables de entorno en el archivo .env Ejemplo:**
+
+    ```bash
+    DATABASE_HOST=localhost
+    DATABASE_PORT=3306
+    DATABASE_NAME=cleaning_sales
+    DATABASE_USER=root2
+    DATABASE_PASS=password
+    ALLOWED_HOST=localhost,127.0.0.1
+    ```
+    
 4. **Realiza las migraciones:**
 
     ```bash
@@ -86,6 +110,6 @@ básico de productos para el aseo personal de clientes registrados
 - **Backend:** El backend estará disponible en `http://localhost:8000` por defecto.
 - **Frontend:** La aplicación Angular estará disponible en `http://localhost:4200`.
 
-Para interactuar con la API, puedes usar herramientas como [Postman](https://www.postman.com) o hacer peticiones desde el frontend.
+Para interactuar con la API, puedes usar herramientas como [Postman](https://www.postman.com) y usar colection ubucada en la carpeta del Backend o hacer peticiones desde el frontend.
 
 ---
