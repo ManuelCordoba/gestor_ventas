@@ -11,8 +11,6 @@ básico de productos para el aseo personal de clientes registrados
 - [Configuración del Backend](#configuración-del-backend)
 - [Configuración del Frontend](#configuración-del-frontend)
 - [Uso](#uso)
-- [Contribuciones](#contribuciones)
-- [Licencia](#licencia)
 
 
 ## Requisitos
@@ -24,8 +22,7 @@ básico de productos para el aseo personal de clientes registrados
 ### Backend
 
 - Python 3.8.0
-- Django 4.2.14
-- Django REST Framework 3.15.2
+- virtualenv 20.26.3
 
 ### Frontend
 
