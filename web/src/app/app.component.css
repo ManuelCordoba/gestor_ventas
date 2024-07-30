@@ -1,0 +1,31 @@
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #dddddd;
+  }
+.container_card{
+  width: 95vh;
+}
+.btnAdd{
+    margin-left: 0.5rem;
+}
+.btnAddToCart{
+    margin-left: 5rem;
+}
+.product_container{
+  margin-left: 4rem;
+}
+.view_sales{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 1rem;
+}
+button:disabled,
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #77828b !important;
+  color: #666666;
+}

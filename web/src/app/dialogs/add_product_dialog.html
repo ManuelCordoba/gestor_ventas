@@ -1,0 +1,25 @@
+<mat-dialog-content class="mat-typography">
+  <h3>Crear Producto</h3>
+  <form class="add_form" [formGroup]="productForm">
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Codigo</mat-label>
+        <input matInput formControlName="code">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>valor venta</mat-label>
+        <input matInput formControlName="value">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Iva</mat-label>
+        <input matInput formControlName="iva">
+      </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cerrar</button>
+  <button mat-button cdkFocusInitial (click)="createProduct()" [disabled]="!productForm.valid">Guardar</button>
+</mat-dialog-actions>

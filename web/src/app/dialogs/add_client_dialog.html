@@ -1,0 +1,31 @@
+<mat-dialog-content class="mat-typography">
+  <h3>Crear cliente</h3>
+  <form class="add_form" [formGroup]="clientForm">
+  
+      <mat-form-field>
+        <mat-label>Nombre</mat-label>
+        <input matInput formControlName="name">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Documento</mat-label>
+        <input matInput formControlName="document">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Dirección</mat-label>
+        <input matInput formControlName="address">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Telefono</mat-label>
+        <input matInput formControlName="phone">
+      </mat-form-field>
+      <mat-form-field>
+        <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+      </mat-form-field>
+
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cerrar</button>
+  <button mat-button cdkFocusInitial (click)="createClient()" [disabled]="!clientForm.valid">Guardar</button>
+</mat-dialog-actions>

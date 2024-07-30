@@ -1,0 +1,6 @@
+.add_client_form{
+    padding: inherit
+}
+.add_form mat-form-field{
+    margin-left: 1rem;
+}
