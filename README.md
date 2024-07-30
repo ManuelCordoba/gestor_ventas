@@ -90,7 +90,7 @@ básico de productos para el aseo personal de clientes registrados
 1. **Instala las dependencias:**
 
     ```bash
-    cd frontend
+    cd web
     npm install
     ```
 
